@@ -2,6 +2,8 @@
   display: block;
 }
 
+$theme-color: #CEDBF2;
+
 @function pxToRem($px){
   @return ($px/16) + rem
 }
@@ -11,28 +13,54 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: pxToRem(40);
+  padding: pxToRem(24);
   &__header {
     align-self: center;
-    padding: pxToRem(16);
+    background-color: $theme-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__main{
+    width: 100%;
     &__input_phases {
-      padding: pxToRem(8);
-      input {
-        padding: pxToRem(8);
-        min-width: pxToRem(240);
+      .input {
+        display: flex;
+        &__phases{
+          flex-grow: 3;
+          padding: pxToRem(8);
+        }
+        &__delimiter{
+          flex-grow: 1;
+          padding: pxToRem(8);
+          margin-left: -2px;
+        }
       }
     }
-    &__input_text {
+    &__action {
       display: flex;
-      padding: pxToRem(8);
-      .textarea {
-        min-height: pxToRem(400);
-        min-width: pxToRem(400);
+      justify-content: center;
+      align-items: center;
+      button {
+        padding: pxToRem(8);
+        margin: pxToRem(8) 0;
+        border-radius: pxToRem(4);
       }
-      .label {
-        background-color: lightgray;
+    }
+    &__panel {
+      display: flex;
+      width: 100%;
+      &--input-area{
+        flex: 1 1 50%;
+        padding: pxToRem(8);
+        min-height: pxToRem(400);
+      }
+      &--masked-text{
+        flex: 1 1 50%;
+        background-color: $theme-color;
+        padding: pxToRem(8);
+        margin: 0;
       }
     }
   }
