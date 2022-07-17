@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+
+@function pxToRem($px){
+  @return ($px/16) + rem
+}
+
+.mctcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: pxToRem(40);
+  &__header {
+    align-self: center;
+    padding: pxToRem(16);
+  }
+  &__main{
+    &__input_phases {
+      padding: pxToRem(8);
+      input {
+        padding: pxToRem(8);
+        min-width: pxToRem(240);
+      }
+    }
+    &__input_text {
+      display: flex;
+      padding: pxToRem(8);
+      .textarea {
+        min-height: pxToRem(400);
+        min-width: pxToRem(400);
+      }
+      .label {
+        background-color: lightgray;
+      }
+    }
+  }
+}

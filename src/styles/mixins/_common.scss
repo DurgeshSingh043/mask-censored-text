@@ -1,0 +1,28 @@
+@mixin generate($prefix, $property) {
+  // List of sizes to generate for each
+  $sizes: 0, .25, .5, 1, 1.5, 3;
+  // Spacing to multiply the sizes by
+  $spacing: 1rem;
+  
+  // Loop through all of the sizes(we use @for rather than @each, as we want access to the index)
+  @for $i from 1 through length($sizes) {
+    // Get the size for the current index
+    $size: nth($sizes, $i);
+    
+    // Create the rule
+    .#{$prefix}-#{$i - 1} {
+      //#{$property}: $spacing * $size;
+      @each $item in $property {
+        @if $item != '' {
+           #{$item}: $spacing * $size;
+           @include screen(tablet){
+              #{$item}: $spacing * $size * 1.5;
+           } 
+           @include screen(desktop){
+            #{$item}: $spacing * $size * 2;
+         } 
+        }
+    }
+    }
+  }
+}
