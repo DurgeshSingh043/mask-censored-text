@@ -49,7 +49,9 @@ export class TestMaskingComponent {
   };
 
   private onRunAnalysisClick = () => {
-    this.analysisData = getStringsFrequency(this.documentText, this.words, this.isCaseSentive);
+    const results = getStringsFrequency(this.documentText, this.words, this.isCaseSentive);
+    results?.sort((a, b) => b.frequency - a.frequency);
+    this.analysisData = results || [];
   };
 
   render() {
