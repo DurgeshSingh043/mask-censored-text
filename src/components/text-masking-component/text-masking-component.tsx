@@ -62,7 +62,7 @@ export class TestMaskingComponent {
           <div class="mctcontainer__main__input_phases">
             <h3 class="title">Keywords and phrases: </h3>
             <div class="input">
-              <input class="input__phases" name="phases" value={this.phases} onInput={this.onInputChangeHandler} />
+              <input class="input__phases" name="phases" placeholder="Enter string of keywords and phases..." value={this.phases} onInput={this.onInputChangeHandler} />
               <select class="input__delimiter" onChange={event => (this.delimiter = (event.target as HTMLSelectElement).value)}>
                 {this.delimiters.map(item => (
                   <option value={item.value}>{item.name}</option>
@@ -92,7 +92,7 @@ export class TestMaskingComponent {
             </button>
           </div>
           <div class="mctcontainer__main__panel">
-            <textarea class="mctcontainer__main__panel--input-area textarea" name="documentText" value={this.documentText} onInput={this.onInputChangeHandler} />
+            <textarea class="mctcontainer__main__panel--input-area textarea" name="documentText" placeholder="Enter document text..." value={this.documentText} onInput={this.onInputChangeHandler} />
             <div class="mctcontainer__main__panel--action only__mobile">
               <button class="button" onClick={this.onMaskedBtnClick}>
                 Masked
