@@ -64,7 +64,7 @@ export class TestMaskingComponent {
           <div class="mctcontainer__main__input_phases">
             <h3 class="title">Keywords and phrases: </h3>
             <div class="input">
-              <input class="input__phases" name="phases" placeholder="Enter string of keywords and phases..." value={this.phases} onInput={this.onInputChangeHandler} />
+              <input class="input__phases" name="phases" placeholder="Enter string of keywords and phrases..." value={this.phases} onInput={this.onInputChangeHandler} />
               <select class="input__delimiter" onChange={event => (this.delimiter = (event.target as HTMLSelectElement).value)}>
                 {this.delimiters.map(item => (
                   <option value={item.value}>{item.name}</option>
