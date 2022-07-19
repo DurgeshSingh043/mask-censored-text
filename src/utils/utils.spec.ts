@@ -1,19 +1,15 @@
-// import { format } from './utils';
+import { replaceAll, generateMaskString, getStringsFrequency } from './utils';
 
-// describe('format', () => {
-//   it('returns empty string for no names defined', () => {
-//     expect(format(undefined, undefined, undefined)).toEqual('');
-//   });
+describe('format', () => {
+  it('return replaced string', () => {
+    expect(replaceAll('Hello Meltwater censor text', 'censor', 'XXXX', undefined)).toEqual('Hello Meltwater XXXX text');
+  });
 
-//   it('formats just first names', () => {
-//     expect(format('Joseph', undefined, undefined)).toEqual('Joseph');
-//   });
+  it('return masked string of given length', () => {
+    expect(generateMaskString('Meltwater'.length)).toEqual('XXXXXXXXX');
+  });
 
-//   it('formats first and last names', () => {
-//     expect(format('Joseph', undefined, 'Publique')).toEqual('Joseph Publique');
-//   });
-
-//   it('formats first, middle and last names', () => {
-//     expect(format('Joseph', 'Quincy', 'Publique')).toEqual('Joseph Quincy Publique');
-//   });
-// });
+  it('get frequency of given word in string', () => {
+    expect(getStringsFrequency('Hello Meltwater censor text', ['text'], false)[0].frequency).toEqual(1);
+  });
+});

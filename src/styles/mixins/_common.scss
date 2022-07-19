@@ -26,3 +26,8 @@
     }
   }
 }
+
+@mixin background {
+  background-color: $theme-color;
+  background-image: $theme-image;
+}

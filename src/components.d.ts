@@ -6,32 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface TextMaskingComponent {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLTextMaskingComponentElement extends Components.TextMaskingComponent, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLTextMaskingComponentElement: {
+        prototype: HTMLTextMaskingComponentElement;
+        new (): HTMLTextMaskingComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "text-masking-component": HTMLTextMaskingComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface TextMaskingComponent {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "text-masking-component": TextMaskingComponent;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "text-masking-component": LocalJSX.TextMaskingComponent & JSXBase.HTMLAttributes<HTMLTextMaskingComponentElement>;
         }
     }
 }

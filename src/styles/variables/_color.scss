@@ -3,11 +3,11 @@ $black: #000000;
 
 $light-gray: #C4C4C4;
 
-$primary-color: #121212;
-$secondary-color: #6D7278;
+$primary-color: rgb(212, 242, 255);
+$secondary-color: #e3c9f2;
 
-$theme-color: #fa824c;
-$theme-color-yellow: #fbbd08;
+$theme-color: $primary-color;
+$theme-image: linear-gradient(45deg, rgba(189, 156, 207, 0) 50%, rgba(189, 156, 207, 1)); //#CEDBF2;
 
 $danger: red;
 $success: green;

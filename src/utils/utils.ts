@@ -24,3 +24,15 @@ export const generateMaskString = (len: number) => {
   storedMast[len] = result;
   return result;
 }
+
+export const getStringsFrequency = (text: string, words: string[], isCaseSentive: boolean) => {
+  const result = [];
+  words?.forEach(word => {
+    if(isCaseSentive){
+      result.push({ word, frequency: text?.split(word)?.length -1 });
+    }else{
+      result.push({ word, frequency: text?.toLowerCase()?.split(word?.toLowerCase())?.length -1 });
+    }
+  })
+  return result;
+}
