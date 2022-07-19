@@ -45,7 +45,7 @@ One more option is there to run analyser to see string or phrases frequency in d
 ## Some important features are
 - User can enter the string of keywords and phrases and select delimiter from dropdown.
 - User can choose setting accordingly
-- User can place a document text as long as he/she want. This is tested with <strong>25k words count</strong>.
+- User can place a document text as long as he/she want. This application is tested with <strong>25k word counts</strong>.
 - User can click on masked button and see the masked text.
 - User can also run the analysis to see the frequency of string of keywords and phrases.
 

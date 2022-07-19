@@ -28,10 +28,10 @@
   &__main {
     margin-top: pxToRem(8);
     width: 100%;
-    &__input_phases {
+    &__input_phrases {
       .input {
         display: flex;
-        &__phases {
+        &__phrases {
           flex-grow: 3;
           padding: pxToRem(8);
           @include inputText();

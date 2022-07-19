@@ -7,7 +7,7 @@ import { generateMaskString, replaceAll, getStringsFrequency } from '../../utils
   shadow: true,
 })
 export class TestMaskingComponent {
-  @State() phases: string;
+  @State() phrases: string;
   @State() documentText: string;
   @State() maskedText: string;
   @State() analysisData: any[];
@@ -28,16 +28,16 @@ export class TestMaskingComponent {
 
   private onMaskedBtnClick = () => {
     let temp = '',
-      isPhasesStarted = false;
+      isPhrasesStarted = false;
     this.words = [];
-    for (let i = 0; i < this.phases.length; i++) {
-      if (this.phases[i] === this.delimiter && !isPhasesStarted) {
+    for (let i = 0; i < this.phrases.length; i++) {
+      if (this.phrases[i] === this.delimiter && !isPhrasesStarted) {
         this.words?.push(temp);
         temp = '';
-      } else if ([`'`, `"`].includes(this.phases[i])) {
-        isPhasesStarted = !isPhasesStarted;
+      } else if ([`'`, `"`].includes(this.phrases[i])) {
+        isPhrasesStarted = !isPhrasesStarted;
       } else {
-        temp += this.phases[i];
+        temp += this.phrases[i];
       }
     }
     if (temp) this.words.push(temp);
@@ -61,10 +61,10 @@ export class TestMaskingComponent {
           <h1>Mask Censored Text</h1>
         </div>
         <div class="mctcontainer__main">
-          <div class="mctcontainer__main__input_phases">
+          <div class="mctcontainer__main__input_phrases">
             <h3 class="title">Keywords and phrases: </h3>
             <div class="input">
-              <input class="input__phases" name="phases" placeholder="Enter string of keywords and phrases..." value={this.phases} onInput={this.onInputChangeHandler} />
+              <input class="input__phrases" name="phrases" placeholder="Enter string of keywords and phrases..." value={this.phrases} onInput={this.onInputChangeHandler} />
               <select class="input__delimiter" onChange={event => (this.delimiter = (event.target as HTMLSelectElement).value)}>
                 {this.delimiters.map(item => (
                   <option value={item.value}>{item.name}</option>
@@ -85,7 +85,7 @@ export class TestMaskingComponent {
               </div>
             </div>
             <div class="importent-note">
-              <strong>*Note:</strong><span> please use single or doble quotes like <code>' or "</code> to wrap phases.</span>
+              <strong>*Note:</strong><span> please use single or doble quotes like <code>' or "</code> to wrap phrases.</span>
             </div>
           </div>
           <div class="mctcontainer__main__action only__desktop">
