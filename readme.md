@@ -1,27 +1,12 @@
-![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)
+Production view [here](https://durgeshsingh043.github.io/mask-censored-text/)
 
-# Stencil Component Starter
-
-This is a starter project for building a standalone Web Component using Stencil.
-
-Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
-
-# Stencil
-
-Stencil is a compiler for building fast web apps using Web Components.
-
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool.  Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
-
-Stencil components are just Web Components, so they work in any major framework or with no framework at all.
-
-## Getting Started
+# Getting started on local machine setup
 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-component
-cd my-component
-git remote rm origin
+git clone https://github.com/DurgeshSingh043/mask-censored-text.git
+cd mask-censored-text
 ```
 
 and run:
@@ -43,33 +28,51 @@ To run the unit tests for the components, run:
 npm test
 ```
 
-Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
+Need help? Check out stencil docs [here](https://stenciljs.com/docs/my-first-component).
+
+`npm start` will run the code and open a browser with `http://localhost:3333/` url(port can be change on different machine or OS). The application will up and running on local. 
+
+Please enter a string of keywords and phrases text box like `Lorem ipsum bibendum 'Nunc in suscipit justo'` and select ` space ` from dropdown. After these steps, please look at the setting section and choose as per requirement and copy paste text <code> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in suscipit justo. Morbi bibendum dui arcu, in dictum augue rhoncus eget. Phasellus et vulputate metus, consectetur tempus leo. Sed eu metus accumsan velit pharetra venenatis non a tortor. Praesent vel varius metus. Sed ut efficitur sem, ut rutrum mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam faucibus scelerisque ipsum tempus bibendum. Aenean scelerisque lacus vitae ultricies bibendum.
+
+Duis et ligula velit. Morbi vel hendrerit tellus, quis sagittis est. Nulla dictum dui et metus sagittis ultricies. Nam vitae urna egestas, hendrerit dui vitae, iaculis orci. Duis vehicula faucibus dolor eu vestibulum. Phasellus bibendum dolor nisl, sed scelerisque urna placerat sed. Pellentesque gravida arcu nisi, ut scelerisque diam congue at. Proin varius nibh vitae tristique pharetra. Praesent in odio velit. Morbi sed augue ultrices, hendrerit lorem et, blandit sem. Nunc semper feugiat orci, quis bibendum est malesuada non. Mauris eu magna eget lectus mattis efficitur. Nunc nunc tellus, sodales sed tristique id, tempor id lectus. In nisi velit, cursus sed euismod id, fringilla nec nunc. Maecenas eu hendrerit ipsum, et ornare elit. </code> in textarea field. At last step, Please click on masked button to mask the text. Now masked text will get appear in right (bottom in mobile view) side of text area. 
+
+One more option is there to run analyser to see string or phrases frequency in document text.
+
+### Output will look like below screen shots (based on above inputs)
+![run-1](https://user-images.githubusercontent.com/45793814/179830649-1b0732a0-ca3a-4760-aeea-bb3733160c9a.PNG)
+![run-2](https://user-images.githubusercontent.com/45793814/179830679-825bece9-e16c-4ac2-ab23-caf540424b5f.PNG)
+
+## Some important features are
+- User can enter the string of keywords and phrases and select delimiter from dropdown.
+- User can choose setting accordingly
+- User can place a document text as long as he/she want. This is tested with <strong>25k words count</strong>.
+- User can click on masked button and see the masked text.
+- User can also run the analysis to see the frequency of string of keywords and phrases.
+
+## Some important point about the code
+- Design is responsive and followed by <strong>mobile first apporoach</strong>.
+- Code is following standard coding practices with software design principles like DRY, KISS, SOP to make sure clean and maintainable code.
+- Used SCSS for moduler and reusable styling and responsive measure rem for spacing.
+- Followed functional design pattern and used <strong>pure functions with unit test cases</strong>.
+
+## Test case coverage:
+![test-cases-successful](https://user-images.githubusercontent.com/45793814/179819026-2d2df3b1-ed6a-4f3b-ac30-42a009879424.PNG)
+
+## Product screenshots:
+
+### Desktop view:
+![production-desktop-view](https://user-images.githubusercontent.com/45793814/179818872-73eee8af-5d42-47da-b000-b5a75631ad27.PNG)
+
+### Mobile View:
+![production-mobile-view](https://user-images.githubusercontent.com/45793814/179818936-edab0bdd-d74a-43a6-9e8c-737b22b45bbf.PNG)
+
+## Performance measures with lighthouse reports:
+
+### Desktop:
+![lighthouse-desktop-report](https://user-images.githubusercontent.com/45793814/179817671-f01cb180-b338-49bd-83ac-d4b2e33e89b3.PNG)
+
+### Mobile:
+![lighthouse-mobile-report](https://user-images.githubusercontent.com/45793814/179817810-753ec53c-e719-43a8-9f87-8b3ce561775c.PNG)
 
 
-## Naming Components
 
-When creating new component tags, we recommend _not_ using `stencil` in the component name (ex: `<stencil-datepicker>`). This is because the generated component has little to nothing to do with Stencil; it's just a web component!
-
-Instead, use a prefix that fits your company or any name for a group of related components. For example, all of the Ionic generated web components use the prefix `ion`.
-
-
-## Using this component
-
-There are three strategies we recommend for using web components built with Stencil.
-
-The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
-### Script tag
-
-- Put a script tag similar to this `<script type='module' src='https://unpkg.com/my-component@0.0.1/dist/my-component.esm.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, html etc
-
-### Node Modules
-- Run `npm install my-component --save`
-- Put a script tag similar to this `<script type='module' src='node_modules/my-component/dist/my-component.esm.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, html etc
-
-### In a stencil-starter app
-- Run `npm install my-component --save`
-- Add an import to the npm packages `import my-component;`
-- Then you can use the element anywhere in your template, JSX, html etc
