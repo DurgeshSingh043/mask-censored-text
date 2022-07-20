@@ -1,4 +1,4 @@
-# <center> Mask-Censored-Text V1 </center>
+# <p align="center"> Mask-Censored-Text V1 </p>
 
 Production view [here](https://durgeshsingh043.github.io/mask-censored-text/)
 
@@ -78,9 +78,9 @@ One more option is there to run analyser to see string or phrases frequency in d
 ![lighthouse-mobile-report](https://user-images.githubusercontent.com/45793814/179817810-753ec53c-e719-43a8-9f87-8b3ce561775c.PNG)
 
 
-# <center> Mask-Censored-Text V2 </center>
+# <p align="center"> Mask-Censored-Text V2 </p>
 
 - Graphical view of word analyser
 - Optimized way to enable automatic masking of document text
-- 
+- NMP package of this component
 
