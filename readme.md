@@ -1,6 +1,8 @@
+# <center> Mask-Censored-Text V1 </center>
+
 Production view [here](https://durgeshsingh043.github.io/mask-censored-text/)
 
-# Getting started on local machine setup
+## Getting started on local machine setup
 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
@@ -76,4 +78,9 @@ One more option is there to run analyser to see string or phrases frequency in d
 ![lighthouse-mobile-report](https://user-images.githubusercontent.com/45793814/179817810-753ec53c-e719-43a8-9f87-8b3ce561775c.PNG)
 
 
+# <center> Mask-Censored-Text V2 </center>
+
+- Graphical view of word analyser
+- Optimized way to enable automatic masking of document text
+- 
 
