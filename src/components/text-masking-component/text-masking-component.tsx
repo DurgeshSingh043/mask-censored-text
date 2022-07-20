@@ -90,14 +90,14 @@ export class TestMaskingComponent {
           </div>
           <div class="mctcontainer__main__action only__desktop">
             <button class="button" onClick={this.onMaskedBtnClick}>
-              Masked
+              Mask
             </button>
           </div>
           <div class="mctcontainer__main__panel">
             <textarea class="mctcontainer__main__panel--input-area textarea" name="documentText" placeholder="Enter document text..." value={this.documentText} onInput={this.onInputChangeHandler} />
             <div class="mctcontainer__main__panel--action only__mobile">
               <button class="button" onClick={this.onMaskedBtnClick}>
-                Masked
+                Mask
               </button>
             </div>  
             <div class="mctcontainer__main__panel--masked-text label">
