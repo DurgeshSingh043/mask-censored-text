@@ -73,7 +73,7 @@ export class TestMaskingComponent {
             </div>
           </div>
           <div class="mctcontainer__main__settings">
-            <h3 class="title">Setting:</h3>
+            <h3 class="title">Settings:</h3>
             <div class="mctcontainer__main__settings--actions">
               <div class="checkbox-area">
                 <input type="checkbox" id="isCaseSentive" checked={this.isCaseSentive} onChange={() => (this.isCaseSentive = !this.isCaseSentive)} />
