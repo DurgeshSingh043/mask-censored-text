@@ -48,15 +48,15 @@ One more option is there to run analyser to see string or phrases frequency in d
 - User can enter the string of keywords and phrases and select delimiter from dropdown.
 - User can choose setting accordingly
 - User can place a document text as long as he/she want. This application is tested with <strong>25k word counts</strong>.
-- User can click on masked button and see the masked text.
+- User can click on mask button and see the masked text.
 - User can also run the analysis to see the frequency of string of keywords and phrases.
 
 ## Some important point about the code
-- Design is responsive and followed by <strong>mobile first apporoach</strong>.
-- Code is following standard coding practices with software design principles like DRY, KISS, SOP to make sure clean and maintainable code.
-- Used SCSS for moduler and reusable styling and responsive measure rem for spacing.
-- Followed functional design pattern and used <strong>pure functions with unit test cases</strong>.
-- Generate dynamic masking util function is using memoization technic. If this function is requested for a new length then masked string will get created and store for next time and if next request is with any existing len, function will just and check and return the masked string. It is too fast by the performance.
+- Design is responsive and followed by <strong>mobile-first approach</strong>.
+- Code is following standard coding practices with software design principles like DRY, KISS and SOP to make sure clean and maintainable code.
+- Used SCSS for modular and reusable styling and responsive measure rem for spacing.
+- Followed functional design patterns and used <strong>pure functions with unit test cases</strong>.
+- Generate dynamic masking util function using memoization technique. If this function is requested for a new length then the masked string will get created and store for the next time and if the next request is with any existing length, the function will just check and return the masked string. It is too fast by the performance.
 
 ## Test case coverage:
 ![test-cases-successful](https://user-images.githubusercontent.com/45793814/179819026-2d2df3b1-ed6a-4f3b-ac30-42a009879424.PNG)
